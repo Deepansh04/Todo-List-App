@@ -66,9 +66,9 @@
                     <%}%>
 
         </div>
-
+        <!--*********** making each card ***************** -->
         <%for (let i of list) {%>
-          
+
             <div class="card ">
                 <div class="flx">
                     <div id="delete">
@@ -89,40 +89,38 @@
                             <%=i.description%>
                         </p>
                         <% let months=["January", "February" , "March" , "April" , "May" , "June" , "July" , "August"
-                            , "September" , "October" , "November" , "December" ];
-                             let dd=i.due_date.getDate(); 
-                             let mm=months[i.due_date.getMonth()]; 
-                             let yyyy=i.due_date.getFullYear(); %>
+                            , "September" , "October" , "November" , "December" ]; let dd=i.due_date.getDate(); let
+                            mm=months[i.due_date.getMonth()]; let yyyy=i.due_date.getFullYear(); %>
                             <p class="due-date"><i class="fa fa-calendar"></i> &nbsp;&nbsp; <%="Due, "+dd+" "+mm+" , "+yyyy %></p>
                     </div>
                 </div>
+            <!-- for diff type of category -->
+                <div class=" left">
+                                    <%if(i.category=='Personal'){%>
+                                        <div class="type green">
+                                            Pesonal
+                                        </div>
+                                        <%}else if(i.category=='Education' ){%>
+                                            <div class="type purple">
+                                                Education
+                                            </div>
+                                            <%}else if(i.category=='Work' ){%>
+                                                <div class="type pink">
+                                                    Work
+                                                </div>
+                                                <%}else {%>
+                                                    <div class="type yellow ">
+                                                        Other
+                                                    </div>
+                                                    <%}%>
 
-                <div class="left"> 
-             <%if(i.category=='Personal'){%>
-                <div class="type green">
-                    Pesonal
-                </div>
-                <%}else if(i.category=='Education'){%>
-                    <div class="type purple">
-                        Education
                     </div>
-                    <%}else if(i.category=='Work'){%>
-                        <div class="type pink">
-                            Work
-                        </div>
-                        <%}else {%>
-                            <div class="type yellow ">
-                                Other
-                            </div>
-                            <%}%>
-                
+
                 </div>
+                <%}%>
+
 
             </div>
-            <%}%>
-
-
-    </div>
 
 
 
