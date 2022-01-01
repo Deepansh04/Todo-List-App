@@ -6,7 +6,7 @@ const db=require('./config/mongoose');
 
 
 // parsing of data
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended:true}));
 // router middleware
 app.use('/',require('./routes/index'));;
 // linkinf=g static files
