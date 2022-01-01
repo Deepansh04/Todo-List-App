@@ -1,0 +1,151 @@
+/* *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} */
+body{
+    background-image: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main-div{
+      top:10%;
+       margin: auto;
+       width:50%;
+  background-color: white;
+
+}
+.heading{
+    font-size: 2rem;
+    color:white;
+        text-align: center;
+        background-image: linear-gradient(to right, red,indigo);
+
+}
+
+.border{
+    border:1px solid grey;
+}
+.padding{
+    padding:10px;
+}
+/* form to inputing data */
+input,select{
+    outline:none;
+    border:0px;
+    width:100%;
+    margin-top: 6px;
+}
+label{
+    font-size:1.2rem;
+}
+
+.flex{
+    display:flex;
+
+}
+.flex>div{
+    width:50%;
+}
+.button{
+    color:white;
+    background-color: rgb(196, 28, 28);
+    padding:10px;
+    
+
+    margin-top:30px;
+    margin-bottom: 30px;
+    margin-left:50%;
+    transform:translateX(-50%);
+
+}
+/* pending tasks */
+.blue{
+    color:white;
+    background-color: rgb(31, 31, 187);
+    text-align: center;
+    font-size: 1.5rem;
+    display: block;
+    width:50%;
+    text-decoration: none;
+}
+.white{
+    color:black;
+    background-color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    display: block;
+    width:50%;
+    text-decoration: none;
+}
+
+
+/* card */
+.card{
+    display:flex;
+    justify-content: space-between;
+      color:black;
+      /* padding:3px; */
+      margin:30px;
+   background-color:rgb(238, 234, 234);
+     align-items: center;
+   
+}
+#delete{
+    margin-left:10px;
+    margin-right: 20px;
+
+}
+#delete a{
+    color:black;
+    
+}
+#delete a:hover{
+    color: red;
+}
+.des{
+    font-weight: 800;
+}
+.due-date{
+    font-size: 0.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.flx{
+    display: flex;
+      /* width:90%; */
+      align-items: center;
+}
+/* type */
+
+.type{
+    width:90px;
+    height:70%;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+
+
+/* color class */
+.purple{
+    background-color: rgb(241, 60, 241);
+}
+.yellow{
+    background-color: rgb(248, 248, 25);
+}
+.pink{
+    background-color: hotpink;
+}
+.green{
+    background-color: rgba(27, 206, 116, 0.87);
+}
+/* media query */
+@media screen and (max-width:600px){
+    #main-div{
+        width:100%;
+    }
+}
