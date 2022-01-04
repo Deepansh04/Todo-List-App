@@ -89,7 +89,8 @@
                             <%=i.description%>
                         </p>
                         <% let months=["January", "February" , "March" , "April" , "May" , "June" , "July" , "August"
-                            , "September" , "October" , "November" , "December" ]; let dd=i.due_date.getDate(); let
+                            , "September" , "October" , "November" , "December" ];
+                             let dd=i.due_date.getDate(); let
                             mm=months[i.due_date.getMonth()]; let yyyy=i.due_date.getFullYear(); %>
                             <p class="due-date"><i class="fa fa-calendar"></i> &nbsp;&nbsp; <%="Due, "+dd+" "+mm+" , "+yyyy %></p>
                     </div>
