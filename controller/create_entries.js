@@ -2,8 +2,9 @@
 const todo = require('../models/todo');
 // sending data to backend
 module.exports.entries = function (req, res) {
+    console.log(req.body);
     todo.create({
-
+       
         description: req.body.description,
         due_date: req.body.due_date,
 
@@ -13,7 +14,7 @@ module.exports.entries = function (req, res) {
     }, function (err, create_todo) {
         if (err) {
 
-            console.log(req.body);
+            
             console.log(`Error occured in creating entry`);
         }
         //redirecting back
